@@ -1,7 +1,7 @@
 # Multiscale-Vision-Mamba-Unet-for-Tumor-Segmentation-on-Breast-Ultrasound-Images
 
 ## Individual role
-  _ As the primary contributor to this project, I was responsible for the conceptualization, model development, and implementation of the InViM-UNet architecture. My key responsibilities included: formulating the initial idea, designing and coding the model, integrating the Inception Module, select the appropriate module structure and location to integrate into the model, conducting experiments, selecting optimal parameters, and writing the paper for submission._
+  _As the primary contributor to this project, I was responsible for the conceptualization, model development, and implementation of the InViM-UNet architecture. My key responsibilities included: formulating the initial idea, designing and coding the model, integrating the Inception Module, select the appropriate module structure and location to integrate into the model, conducting experiments, selecting optimal parameters, and writing the paper for submission._
 
 ## Project Goals
 
