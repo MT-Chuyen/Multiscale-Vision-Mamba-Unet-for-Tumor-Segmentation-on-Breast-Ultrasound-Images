@@ -2,19 +2,19 @@
 
 ## Project Goals
 
-**Problem Statement:
+**Problem Statement:**
 
 *   Difficulty in accurately segmenting breast tumors in ultrasound images due to variability in shape and size.
 
 *   Existing segmentation methods struggle with diverse tumor characteristics.
 
-**Importance:
+**Importance:**
 
 *   Early breast cancer detection improves recovery rates.
 
 *   Accurate ultrasound tumor segmentation is crucial for reliable diagnosis.
 
-**Specific Objectives:
+**Specific Objectives:**
 
 *   To develop an enhanced segmentation model, "Inception Vision Mamba U-Net (InViM-UNet)," specifically designed to address the challenges of segmenting breast tumors in ultrasound images with varied shapes and sizes.
 
@@ -22,13 +22,13 @@
 
 *   To outperform existing state-of-the-art models in breast tumor segmentation accuracy.
 
-**Target Audience:
+**Target Audience:**
 
 *   Radiologists, oncologists, and medical professionals involved in breast cancer diagnosis and treatment.
 
 ## Methodology
 
-**Architectural Components:
+**Architectural Components:**
 
 *   Vision Mamba U-Net (ViM-UNet) architecture: A U-Net based model using Visual State Space (VSS) blocks and simple skip connections.
 
@@ -36,7 +36,7 @@
 
 *   Asymmetric convolutions: Employed in the Inception Module to enhance efficiency and reduce complexity.
 
-**Why were these methods chosen?
+**Why were these methods chosen?**
 
 *   ViM-UNet: Provides good efficiency and leverages SSMs for long-range dependencies.
 
@@ -44,13 +44,13 @@
 
 *   Asymmetric Convolutions: Reduces computational complexity while maintaining multi-scale feature extraction.
 
-**Were there any modifications or improvements made?
+**Were there any modifications or improvements made?**
 
 *   The Inception Module was strategically placed immediately after the patch embedding layer, rather than within the network like in other architectures.
 
 *   The standard Inception module was modified to incorporate asymmetric convolutions for enhanced efficiency.
 
-**Dataset:
+**Dataset:**
 
 *   Utilized the Breast Ultrasound Dataset.
 
@@ -64,7 +64,7 @@
 
 ## Results
 
-**Evaluation Metrics:
+**Evaluation Metrics:**
 
 *   Dice Score (Similarity between predicted and ground truth segmentations).
 
@@ -76,7 +76,7 @@
 
 *   IoU (Intersection over Union) – (Overlap between predicted and ground truth segmentations).
 
-**Key Performance Achieved:
+**Key Performance Achieved:**
 
 *   InViM-UNet achieved the best overall performance with a Dice score of 0.7809, Precision of 0.9240, F1-Score of 0.7912, and IoU of 0.6889.
 
