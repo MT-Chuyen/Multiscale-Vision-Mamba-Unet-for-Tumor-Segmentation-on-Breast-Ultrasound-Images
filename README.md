@@ -84,4 +84,5 @@
 
 *   InViM-UNet significantly outperformed other models including ViM-UNet, UNet, MSVM-UNet, and ViT+UNet based on metrics like Dice score and IoU.
 
-  
+## Individual role
+  _As the primary contributor to this project, I was responsible for the conceptualization, model development, and implementation of the InViM-UNet architecture. My key responsibilities included: formulating the initial idea, designing and coding the model, integrating the Inception Module, conducting experiments, selecting optimal parameters, and writing the paper for submission._
