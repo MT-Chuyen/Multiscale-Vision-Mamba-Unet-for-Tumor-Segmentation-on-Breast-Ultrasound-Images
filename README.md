@@ -1,85 +1,87 @@
 # Multiscale-Vision-Mamba-Unet-for-Tumor-Segmentation-on-Breast-Ultrasound-Images
 
-I. Project Goals
+## Project Goals
 
-Problem Statement:
+**Problem Statement:
 
-Difficulty in accurately segmenting breast tumors in ultrasound images due to variability in shape and size.
+*   Difficulty in accurately segmenting breast tumors in ultrasound images due to variability in shape and size.
 
-Existing segmentation methods struggle with diverse tumor characteristics.
+*   Existing segmentation methods struggle with diverse tumor characteristics.
 
-Importance:
+**Importance:
 
-Early breast cancer detection improves recovery rates.
+*   Early breast cancer detection improves recovery rates.
 
-Accurate ultrasound tumor segmentation is crucial for reliable diagnosis.
+*   Accurate ultrasound tumor segmentation is crucial for reliable diagnosis.
 
-Specific Objectives:
+**Specific Objectives:
 
-To develop an enhanced segmentation model, "Inception Vision Mamba U-Net (InViM-UNet)," specifically designed to address the challenges of segmenting breast tumors in ultrasound images with varied shapes and sizes.
+*   To develop an enhanced segmentation model, "Inception Vision Mamba U-Net (InViM-UNet)," specifically designed to address the challenges of segmenting breast tumors in ultrasound images with varied shapes and sizes.
 
-To integrate the Inception Module into the Vision Mamba U-Net architecture to capture multi-scale features effectively.
+*   To integrate the Inception Module into the Vision Mamba U-Net architecture to capture multi-scale features effectively.
 
-To outperform existing state-of-the-art models in breast tumor segmentation accuracy.
+*   To outperform existing state-of-the-art models in breast tumor segmentation accuracy.
 
-Target Audience:
+**Target Audience:
 
-Radiologists, oncologists, and medical professionals involved in breast cancer diagnosis and treatment.
+*   Radiologists, oncologists, and medical professionals involved in breast cancer diagnosis and treatment.
 
-II. Methodology
+## Methodology
 
-Architectural Components:
+**Architectural Components:
 
-Vision Mamba U-Net (ViM-UNet) architecture: A U-Net based model using Visual State Space (VSS) blocks and simple skip connections.
+*   Vision Mamba U-Net (ViM-UNet) architecture: A U-Net based model using Visual State Space (VSS) blocks and simple skip connections.
 
-Inception Module: Integrated immediately after the patch embedding layer to capture multi-scale features.
+*   Inception Module: Integrated immediately after the patch embedding layer to capture multi-scale features.
 
-Asymmetric convolutions: Employed in the Inception Module to enhance efficiency and reduce complexity.
+*   Asymmetric convolutions: Employed in the Inception Module to enhance efficiency and reduce complexity.
 
-Why were these methods chosen?
+**Why were these methods chosen?
 
-ViM-UNet: Provides good efficiency and leverages SSMs for long-range dependencies.
+*   ViM-UNet: Provides good efficiency and leverages SSMs for long-range dependencies.
 
-Inception Module: Effective at capturing information at different scales by employing parallel convolutional filters with varying kernel sizes within a single layer. This is important for handling tumor diversity.
+*   Inception Module: Effective at capturing information at different scales by employing parallel convolutional filters with varying kernel sizes within a single layer. This is important for handling tumor diversity.
 
-Asymmetric Convolutions: Reduces computational complexity while maintaining multi-scale feature extraction.
+*   Asymmetric Convolutions: Reduces computational complexity while maintaining multi-scale feature extraction.
 
-Were there any modifications or improvements made?
+**Were there any modifications or improvements made?
 
-The Inception Module was strategically placed immediately after the patch embedding layer, rather than within the network like in other architectures.
+*   The Inception Module was strategically placed immediately after the patch embedding layer, rather than within the network like in other architectures.
 
-The standard Inception module was modified to incorporate asymmetric convolutions for enhanced efficiency.
+*   The standard Inception module was modified to incorporate asymmetric convolutions for enhanced efficiency.
 
-Dataset:
+**Dataset:
 
-Utilized the Breast Ultrasound Dataset.
+*   Utilized the Breast Ultrasound Dataset.
 
-Contains images with annotation, having undergone image process (e.g remove boundaries, conversion from DICOM to PNG format...)
+*   Contains images with annotation, having undergone image process (e.g remove boundaries, conversion from DICOM to PNG format...)
 
-Training & Evaluation Procedure:
+*   Training & Evaluation Procedure:
 
-Model Training using Ultrasound Dataset, focusing on loss metrics and validation techniques.
+*   Model Training using Ultrasound Dataset, focusing on loss metrics and validation techniques.
 
-Comparison with baseline segmentation models to validate InViM-UNet improvement.
+*   Comparison with baseline segmentation models to validate InViM-UNet improvement.
 
-III. Results
+## Results
 
-Evaluation Metrics:
+**Evaluation Metrics:
 
-Dice Score (Similarity between predicted and ground truth segmentations).
+*   Dice Score (Similarity between predicted and ground truth segmentations).
 
-Precision (Accuracy of positive predictions).
+*   Precision (Accuracy of positive predictions).
 
-Recall (Ability to capture all positive cases).
+*   Recall (Ability to capture all positive cases).
 
-F1-Score (Harmonic mean of Precision and Recall).
+*   F1-Score (Harmonic mean of Precision and Recall).
 
-IoU (Intersection over Union) – (Overlap between predicted and ground truth segmentations).
+*   IoU (Intersection over Union) – (Overlap between predicted and ground truth segmentations).
 
-Key Performance Achieved:
+**Key Performance Achieved:
 
-InViM-UNet achieved the best overall performance with a Dice score of 0.7809, Precision of 0.9240, F1-Score of 0.7912, and IoU of 0.6889.
+*   InViM-UNet achieved the best overall performance with a Dice score of 0.7809, Precision of 0.9240, F1-Score of 0.7912, and IoU of 0.6889.
 
-Comparative Analysis:
+**Comparative Analysis:
 
-InViM-UNet significantly outperformed other models including ViM-UNet, UNet, MSVM-UNet, and ViT+UNet based on metrics like Dice score and IoU.
+*   InViM-UNet significantly outperformed other models including ViM-UNet, UNet, MSVM-UNet, and ViT+UNet based on metrics like Dice score and IoU.
+
+  
