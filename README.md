@@ -2,6 +2,9 @@
 
 ## Project Goals
 
+## Individual role
+  _I served as the team leader. As the primary contributor to this project, I was responsible for the conceptualization, model development, and implementation of the InViM-UNet architecture. My key responsibilities included: formulating the initial idea, designing and coding the model, integrating the Inception Module, conducting experiments, selecting optimal parameters, and writing the paper for submission._
+  
 **Problem Statement:**
 
 *   Difficulty in accurately segmenting breast tumors in ultrasound images due to variability in shape and size.
@@ -84,5 +87,4 @@
 
 *   InViM-UNet significantly outperformed other models including ViM-UNet, UNet, MSVM-UNet, and ViT+UNet based on metrics like Dice score and IoU.
 
-## Individual role
-  _I served as the team leader. As the primary contributor to this project, I was responsible for the conceptualization, model development, and implementation of the InViM-UNet architecture. My key responsibilities included: formulating the initial idea, designing and coding the model, integrating the Inception Module, conducting experiments, selecting optimal parameters, and writing the paper for submission._
+ 
